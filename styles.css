@@ -189,3 +189,58 @@ nav li:hover:after {
 .slogans .item-1 {
     margin-top: 2vw;
 }
+
+
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+  
+  #blob {
+    background-color: white;
+    height: 35vmax;
+    aspect-ratio: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -20% -20%;
+    border-radius: 60%;
+    background: linear-gradient(to right, #9900ff4d, #9900ff1f, #ff3c0041, #ff3c0069);
+    animation: rotate 20s infinite;
+    opacity: 1;
+    z-index: -2;
+  }
+  
+  #blur {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    backdrop-filter: blur(10rem);
+
+  }
+  
+  h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(3rem, 10vw, 10rem);
+    color: white;
+    white-space: nowrap;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    margin: 0rem;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    z-index: -2;
+  }
+  
